@@ -44,7 +44,44 @@ console.log("test:", test);*/
 const random = uuidv4();
 console.log("random:", random);*/
 
-const chalk = require('chalk');
+/*const chalk = require('chalk');
 const log = console.log;
 
-log(chalk.blue('Hello') + random + chalk.red('!'));
+log(chalk.blue('Hello') + random + chalk.red('!'));*/
+
+
+// Module Package FILE
+/*const calculate = require('./hisob.js');
+
+const natija = calculate.kopaytirish(80, 20);
+console.log("Natija", natija);
+console.log('**********');
+
+const natija2 = calculate.qoshish(70, 20);
+console.log("Natija", natija2);
+console.log('**********');
+
+const natija3 = calculate.ayirish(80, 20);
+console.log("Natija", natija3);*/
+
+/*const moment = require("moment");
+
+
+const calculate = require('./hisob.js');
+console.log(arguments);*/
+
+const Account = require("./account");
+Account.tellMeAboutClass();
+Account.tellMeTime();
+
+console.log("===============");
+
+const myAccount = new Account('Nick', 10000, 12345687547);
+myAccount.giveMeDetails();
+
+myAccount.makeDeposit(1000000);
+
+// Ferrari
+
+myAccount.withdrawMoney(400000);
+myAccount.makeDeposit(200000);
